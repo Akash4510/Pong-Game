@@ -14,6 +14,10 @@ export default class Paddle {
         this.paddleElem.style.setProperty("--position", value)
     }
 
+    rect() {
+        return this.paddleElem.getBoundingClientRect();
+    }
+
     update(delta, ballHeight) {
         // This single line will make the computer unbeatable.
         // this.position = ballHeight;
